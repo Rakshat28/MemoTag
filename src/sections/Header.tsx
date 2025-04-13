@@ -1,12 +1,32 @@
-
+"use client"
 import ArrowRight from '@/assets/arrow-right.svg';
 import MenuIcon from "@/assets/menu.svg"
 import BrandLogo from "@/assets/BrandLogo.svg";
 import PreOrderButton from "@/components/PreOrderButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { useEffect, useState } from 'react';
 export const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      }
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+      lastScrollY = currentScrollY;
+    }
+    window.addEventListener('scroll', controlNavbar);
+    return () => window.removeEventListener('scroll', controlNavbar)
+  },[]);
   return(
-    <header className="sticky top-0 backdrop-blur-sm z-10">
+    <header className={`sticky top-0 backdrop-blur-sm z-50 transition-transform duration-600 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm">
         <div className = "inline-flex gap-1 items-center">
           <p>The Future of Dementia Care</p>
@@ -14,9 +34,9 @@ export const Header = () => {
         </div>
       </div>
       <div className="py-5">
-        <div className="container gap-4 mx-auto px-4 ">
+        <div className="container gap-4 mx-auto px-16 ">
           <div className="flex items-center justify-between">
-            <BrandLogo className="h-8 w-auto md:h-8  whitespace-nowrap" />
+            <BrandLogo className="h-6 w-auto md:h-8  whitespace-nowrap" />
             <MenuIcon className="h-5 w-5 block md:hidden"/>
             <nav className="hidden md:flex gap-5 text-black/60 items-center mx-3">
               <a href="" className="relative group hover:text-black">
