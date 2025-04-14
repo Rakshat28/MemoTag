@@ -7,6 +7,9 @@ import { Solutions } from "@/sections/Solutions";
 import  StatsSection  from "@/sections/StatsSection";
 import { ParallaxSection } from "@/components/ParallaxSection";
 import { FillerSection } from "@/sections/FillerSection";
+import FaqSection from "@/sections/FaqSection";
+import PreFooter from "@/sections/PreFooter";
+import Testimonial from "@/sections/Testimonial";
 export default function Home() {
   return (
     <div>
@@ -26,7 +29,13 @@ export default function Home() {
       </ParallaxSection>
       <ParallaxSection speed={0.5}> 
         <FillerSection></FillerSection>
+        <FaqSection></FaqSection>
+        <Testimonial></Testimonial>
       </ParallaxSection>
+      <ParallaxSection speed={0.6}>
+        <PreFooter></PreFooter>
+      </ParallaxSection>
+      
       
     </div>
   );

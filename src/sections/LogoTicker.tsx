@@ -1,9 +1,9 @@
 "use client"
-import Logo1 from '../assets/logo1.svg'
-import Logo2 from '../assets/logo2.svg'
-import Logo3 from '../assets/logo3.svg'
-import Logo4 from '../assets/logo4.svg'
-import Logo5 from '../assets/logo5.svg'
+import Logo1 from '../../public/assets/logo1.svg'
+import Logo2 from '../../public/assets/logo2.svg'
+import Logo3 from '../../public/assets/logo3.svg'
+import Logo4 from '../../public/assets/logo4.svg'
+import Logo5 from '../../public/assets/logo5.svg'
 import {motion} from "framer-motion"
 export function LogoTicker(){
     return(

@@ -1,7 +1,7 @@
 "use client"
-import ArrowRight from '@/assets/arrow-right.svg';
-import MenuIcon from "@/assets/menu.svg"
-import BrandLogo from "@/assets/BrandLogo.svg";
+import ArrowRight from '../../public/assets/arrow-right.svg';
+import MenuIcon from "../../public/assets/menu.svg"
+import BrandLogo from "../../public/assets/BrandLogo.svg";
 import PreOrderButton from "@/components/PreOrderButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { useEffect, useState } from 'react';
