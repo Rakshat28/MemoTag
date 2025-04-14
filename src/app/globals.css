@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Prevent parallax overflow */
+.parallax-container {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+  
+  /* Ensure content sections maintain their layout space */
+  .content-section {
+    position: relative;
+    transform: translateZ(0);
+  }

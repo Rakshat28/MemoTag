@@ -36,7 +36,7 @@ export function Feature() {
   ];
 
   return (
-    <div className="bg-white py-10 md:py-24">
+    <div className="bg-white py-10 md:pt-8 md:pb-2">
       <div className="max-w-6xl mx-auto py-16 px-4">
         <h2 className="text-slate-900 md:text-4xl text-3xl font-bold text-center mb-16">
           MemoTag's <span className="text-[#0035E8]">Key Features</span> for Advanced Dementia Care
