@@ -134,7 +134,10 @@ const FaqSection = () => {
               <div 
                 key={item.id}
                 data-faq-id={item.id}
-                ref={el => faqItemRefs.current[index] = el}
+                ref={el => {
+                  faqItemRefs.current[index] = el;
+                }}
+                
                 className={`border border-dashed rounded-xl bg-white overflow-hidden transition-all duration-700 hover:shadow-md ${
                   visibleFaqs.includes(item.id) 
                     ? 'opacity-100 transform translate-y-0' 
