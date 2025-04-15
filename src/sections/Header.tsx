@@ -4,6 +4,7 @@ import MenuIcon from "../../public/assets/menu.svg"
 import BrandLogo from "../../public/assets/BrandLogo.svg";
 import PreOrderButton from "@/components/PreOrderButton";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 export const Header = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -57,12 +58,16 @@ export const Header = () => {
               </a>
             </nav>
             <div className="md:inline-flex gap-3 items-center justify-center hidden ">
+                <Link href="https://memotag.infivent.io/">
                 <PreOrderButton>
                   Pre-Order Now
                 </PreOrderButton>
-                <WhatsAppButton>
-                  Join Us
-                </WhatsAppButton>
+                </Link>
+                <Link href="https://chat.whatsapp.com/FOreKmWYdll4XPQPCZNrWS">
+                  <WhatsAppButton>
+                    Join Us
+                  </WhatsAppButton>
+                </Link>
               </div>
           </div>
         </div>

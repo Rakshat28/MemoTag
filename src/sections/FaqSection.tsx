@@ -15,27 +15,27 @@ const faqData: FAQItem[] = [
   {
     id: 1,
     question: "How does MemoTag work?",
-    answer: "MemoTag works by using advanced memory enhancement technology to help individuals with cognitive challenges. It provides personalized reminders, stores important information, and offers cognitive support through an easy-to-use interface designed specifically for dementia and elder care."
+    answer: "MemoTag combines an IoT wearable device with a mobile application to monitor a patient’s physical and cognitive health. It tracks sleep patterns, fall detection, GPS location, and geofencing alerts while offering personalized care recommendations. The platform also uses AI to analyze cognitive patterns and provide actionable insights for caregivers and families."
   },
   {
     id: 2,
     question: "How & Who can use MemoTag?",
-    answer: "MemoTag is designed for individuals experiencing memory issues, particularly those with early to mid-stage dementia, as well as their caregivers and family members. The platform is accessible to users of all technical abilities with a simple, intuitive interface that requires minimal training."
+    answer: "MemoTag is designed for dementia patients, their caregivers, and family members. While a cell phone is required to access the MemoTag app, caregivers can manage the device for patients who may not use a phone. The wearable itself functions independently for features like fall detection and GPS tracking."
   },
   {
     id: 3,
     question: "Is my data secure and private?",
-    answer: "Yes, your data is secure and private with MemoTag. We implement end-to-end encryption, comply with healthcare privacy regulations, and never share your personal information with third parties. Your sensitive health and personal data remains confidential and protected at all times."
+    answer: "Yes, MemoTag prioritizes your data privacy. All health data is encrypted and stored on secure servers compliant with global privacy standards such as GDPR and HIPAA. Only authorized users have access to patient data."
   },
   {
     id: 4,
     question: "What is cognitive analysis, and how can it help?",
-    answer: "Cognitive analysis is our process of monitoring memory patterns and cognitive function over time. MemoTag tracks interactions to identify areas where additional support may be beneficial, helping caregivers provide more targeted assistance and enabling early intervention when cognitive changes occur."
+    answer: "Cognitive analysis involves tracking memory, speech, and behavior patterns to identify early signs of cognitive decline. MemoTag provides tailored exercises and insights based on this analysis, helping caregivers proactively manage the patient’s condition and maintain their mental health."
   },
   {
     id: 5,
     question: "How much does MemoTag cost?",
-    answer: "MemoTag offers several subscription tiers to meet different needs and budgets. Our basic plan starts at $19.99 monthly, while our comprehensive care plan is $39.99 monthly. All plans include core features, with premium options offering additional support tools and priority customer service."
+    answer: "MemoTag’s wearable costs ₹10,999 + ₹4,000 annual subscription for the app’s features. This averages to just ₹11 per day, offering maximum care and support at an affordable price."
   }
 ];
 

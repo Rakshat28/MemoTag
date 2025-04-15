@@ -37,7 +37,7 @@ const PreFooter = () => {
   return (
     <section 
       ref={sectionRef}
-      className="w-full bg-gradient-to-b from-blue-50 via-blue-100 to-blue-50 py-40 my-24 relative overflow-hidden"
+      className="w-full bg-gradient-to-b from-blue-50 via-blue-100 to-blue-50 py-40  relative overflow-hidden"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
